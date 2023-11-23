@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AcessoRestrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CadastrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CadastroAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="produtoMaior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaCadastroItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaQuantidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

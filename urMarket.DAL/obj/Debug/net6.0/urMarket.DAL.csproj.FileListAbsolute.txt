@@ -1,0 +1,17 @@
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.DAL.deps.json
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.DAL.runtimeconfig.json
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.DAL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.DAL.pdb
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.csproj.AssemblyReference.cache
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.AssemblyInfoInputs.cache
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.AssemblyInfo.cs
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.csproj.CoreCompileInputs.cache
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\refint\urMarket.DAL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.pdb
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.genruntimeconfig.cache
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\ref\urMarket.DAL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.MODEL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\bin\Debug\net6.0\urMarket.MODEL.pdb
+C:\Users\caual\source\repos\urMarket\urMarket.DAL\obj\Debug\net6.0\urMarket.DAL.csproj.CopyComplete

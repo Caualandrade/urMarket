@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.BLL\\urMarket.BLL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.BLL\\urMarket.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.BLL\\urMarket.BLL.csproj",
+        "projectName": "urMarket.BLL",
+        "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.BLL\\urMarket.BLL.csproj",
+        "packagesPath": "C:\\Users\\caual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\urMarket.DAL.csproj": {
+                "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\urMarket.DAL.csproj"
+              },
+              "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj": {
+                "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\urMarket.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\urMarket.DAL.csproj",
+        "projectName": "urMarket.DAL",
+        "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\urMarket.DAL.csproj",
+        "packagesPath": "C:\\Users\\caual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj": {
+                "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj",
+        "projectName": "urMarket.MODEL",
+        "projectPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\urMarket.MODEL.csproj",
+        "packagesPath": "C:\\Users\\caual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caual\\source\\repos\\urMarket\\urMarket.MODEL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

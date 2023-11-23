@@ -1,0 +1,11 @@
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\bin\Debug\net6.0\urMarket.MODEL.deps.json
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\bin\Debug\net6.0\urMarket.MODEL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\bin\Debug\net6.0\urMarket.MODEL.pdb
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.AssemblyInfoInputs.cache
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.AssemblyInfo.cs
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\refint\urMarket.MODEL.dll
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\urMarket.MODEL.pdb
+C:\Users\caual\source\repos\urMarket\urMarket.MODEL\obj\Debug\net6.0\ref\urMarket.MODEL.dll
