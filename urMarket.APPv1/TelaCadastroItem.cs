@@ -10,6 +10,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.ComponentModel.Com2Interop;
 using urMarket.BLL;
 using urMarket.MODEL;
 
@@ -19,7 +20,7 @@ namespace urMarket.APPv1
     {
 
         public string caminhoFoto = "";
-        private Produto produto = new Produto();
+        Produto produto = new Produto();
 
         public TelaCadastroItem()
         {
@@ -67,10 +68,9 @@ namespace urMarket.APPv1
         }
 
 
-        //Fazer adição pelo post
+
         private async void button3_Click(object sender, EventArgs e)
         {
-            string url = "http://localhost:5043/api/Produto";
 
             try
             {
@@ -91,9 +91,7 @@ namespace urMarket.APPv1
                     }
                     produto.Valor = decimal.Parse(textBox3.Text);
                     produto.CaminhoFoto = caminhoFoto;
-                    ProdutoRepository.Add(produto);
-                    MessageBox.Show("Produto cadastrado com sucesso!");
-                    PopularDataGradeView();
+                    produto.Foto = ProdutoRepository.GetFoto(produto.CaminhoFoto);
                 }
                 else
                 {
@@ -105,6 +103,37 @@ namespace urMarket.APPv1
                 MessageBox.Show(ex.Message);
             }
 
+            addItemHttp(produto);
+        }
+
+        private async void addItemHttp(Produto prod)
+        {
+
+            string url = "http://localhost:5043/api/Produto";
+            string json = JsonConvert.SerializeObject(prod);
+            using (HttpClient httpClient = new HttpClient())
+            {
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                try
+                {
+
+                    HttpResponseMessage response = await httpClient.PostAsync(url, content);
+                    if (response.IsSuccessStatusCode)
+                    {
+
+                        MessageBox.Show("Item adicionado com sucesso!");
+                        PopularDataGradeView();
+                    }
+                    else
+                    {
+
+                        MessageBox.Show($"Erro ao adicionar item. Código: {response.StatusCode}");
+                    }
+                }
+                catch (Exception ex) { MessageBox.Show($"Erro ao adicionar item: {ex.Message}"); }
+
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

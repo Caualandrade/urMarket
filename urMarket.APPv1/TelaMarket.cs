@@ -66,7 +66,7 @@ namespace urMarket.APPv1
             string url = "http://localhost:5043/api/Produto";
             List<Produto> produtos = await GetProdutos(url);
 
-            
+
             Categoria categoria = new Categoria();
 
             dataGridView1.Columns.Clear();
@@ -75,7 +75,7 @@ namespace urMarket.APPv1
 
             for (int i = 0; i < produtos.Count; i++)
             {
-                
+
                 string url2 = $"http://localhost:5043/api/Categoria/{produtos[i].IdCat}";
                 categoria = await GetCategoriaById(url2);
                 dataGridView1.Rows[i].Cells["Categoria"].Value = categoria.Nome;
@@ -123,10 +123,10 @@ namespace urMarket.APPv1
 
         }
 
-        
+
         public async Task<Carrinho> CadastrarCarrinho(int idProduto, int idUser, int qntd)
         {
-            
+
             string url = $"http://localhost:5043/api/Produto/{idProduto}";
             Produto produto = await GetProdutoById(url);
 

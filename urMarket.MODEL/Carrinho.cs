@@ -15,7 +15,9 @@ public partial class Carrinho
 
     public int Quantidade { get; set; }
 
-    public virtual Produto IdProdNavigation { get; set; } = null!;
+    //public virtual Produto IdProdNavigation { get; set; } = null!;
+    public virtual ICollection<Produto> IdProdNavigation { get; set; } = new List<Produto>();
 
-    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    //public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual ICollection<Usuario> IdUsuarioNavigation { get; set; } = new List<Usuario>();
 }
