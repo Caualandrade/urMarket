@@ -24,57 +24,49 @@ namespace urMarket.APPv1
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private async void button1_Click(object sender, EventArgs e)
         {
             string url = "http://localhost:5043/api/Categoria";
             categoria.Nome = textBox1.Text;
-
-            string jsonCategoria = JsonConvert.SerializeObject(categoria);
-            using (HttpClient client = new HttpClient())
+            if(categoria.Nome != "")
             {
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                StringContent content = new StringContent(jsonCategoria, Encoding.UTF8, "application/json");
-
-                try
+                string jsonCategoria = JsonConvert.SerializeObject(categoria);
+                using (HttpClient client = new HttpClient())
                 {
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    StringContent content = new StringContent(jsonCategoria, Encoding.UTF8, "application/json");
 
-                    HttpResponseMessage response = await client.PostAsync(url, content);
-
-
-                    if (response.IsSuccessStatusCode)
+                    try
                     {
 
-                        MessageBox.Show("Categoria cadastrado com sucesso!");
-                        PopularGrade();
-                        textBox1.Text = "";
+                        HttpResponseMessage response = await client.PostAsync(url, content);
+
+
+                        if (response.IsSuccessStatusCode)
+                        {
+
+                            MessageBox.Show("Categoria cadastrado com sucesso!");
+                            PopularGrade();
+                            textBox1.Text = "";
+                        }
+                        else
+                        {
+
+                            MessageBox.Show($"Erro ao cadastrar categoria. Código: {response.StatusCode}");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
 
-                        MessageBox.Show($"Erro ao cadastrar categoria. Código: {response.StatusCode}");
+                        MessageBox.Show($"Erro ao cadastrar categoria: {ex.Message}");
                     }
                 }
-                catch (Exception ex)
-                {
 
-                    MessageBox.Show($"Erro ao cadastrar categoria: {ex.Message}");
-                }
             }
-        }
-
-        private async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            else
+            {
+                MessageBox.Show("Campo categoria vazio");
+            }
         }
 
         private async void PopularGrade()
@@ -91,12 +83,7 @@ namespace urMarket.APPv1
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
-
-        private void CadastrarCategoria_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void label7_Click(object sender, EventArgs e)
         {
             PopularGrade();

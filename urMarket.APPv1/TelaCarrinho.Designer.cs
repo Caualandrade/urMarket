@@ -35,7 +35,6 @@
             textBox1 = new TextBox();
             btRemover = new Button();
             panel1 = new Panel();
-            label2 = new Label();
             label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -53,21 +52,22 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.Window;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(10, 105);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(351, 150);
+            dataGridView1.Size = new Size(436, 150);
             dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(269, 25);
+            label3.Location = new Point(299, 25);
             label3.Name = "label3";
             label3.Size = new Size(68, 22);
             label3.TabIndex = 3;
@@ -103,26 +103,14 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(label2);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(538, 55);
+            panel1.Size = new Size(553, 55);
             panel1.TabIndex = 7;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(333, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 18);
-            label2.TabIndex = 2;
-            label2.Text = "Total";
-            label2.Click += label2_Click;
             // 
             // label7
             // 
@@ -138,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(430, 371);
+            ClientSize = new Size(499, 371);
             Controls.Add(panel1);
             Controls.Add(btRemover);
             Controls.Add(textBox1);
@@ -165,6 +153,5 @@
         private Button btRemover;
         private Panel panel1;
         private Label label7;
-        private Label label2;
     }
 }

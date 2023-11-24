@@ -40,6 +40,7 @@ public partial class CUsersCaualSourceReposUrmarketUrmarketDalDatabaseDatabaseMd
             entity.Property(e => e.IdUsuario).HasColumnName("Id_Usuario");
             entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
 
+            /*
             entity.HasOne(d => d.IdProdNavigation).WithMany(p => p.Carrinhos)
                 .HasForeignKey(d => d.IdProd)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -49,6 +50,7 @@ public partial class CUsersCaualSourceReposUrmarketUrmarketDalDatabaseDatabaseMd
                 .HasForeignKey(d => d.IdUsuario)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Carrinho__Id_Usu__3E52440B");
+            */
         });
 
         modelBuilder.Entity<Categoria>(entity =>
@@ -74,12 +76,14 @@ public partial class CUsersCaualSourceReposUrmarketUrmarketDalDatabaseDatabaseMd
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Valor).HasColumnType("decimal(18, 2)");
-
+            /*
             entity.HasOne(d => d.IdCatNavigation).WithMany(p => p.Produtos)
                 .HasForeignKey(d => d.IdCat)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Produto__Id_Cat__3A81B327");
+            */
             
+           
         });
 
         modelBuilder.Entity<Usuario>(entity =>

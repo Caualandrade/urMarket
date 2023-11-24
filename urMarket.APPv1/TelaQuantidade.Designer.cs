@@ -41,7 +41,7 @@
             label1.Size = new Size(49, 15);
             label1.TabIndex = 0;
             label1.Text = "Informe";
-            label1.Click += label1_Click;
+            //label1.Click += label1_Click;
             // 
             // textBox1
             // 
@@ -49,7 +49,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
+            //textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 

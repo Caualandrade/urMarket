@@ -70,7 +70,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(169, 23);
             textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
+            //textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -114,7 +114,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(169, 19);
             listBox1.TabIndex = 6;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            //listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label4
             // 
@@ -189,7 +189,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(416, 303);
             dataGridView1.TabIndex = 14;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.DoubleClick += dataGridView1_DoubleClick;
             // 
             // label6
@@ -267,7 +267,7 @@
             label8.Size = new Size(278, 17);
             label8.TabIndex = 26;
             label8.Text = "Informe o Id do produto que deseja excluir";
-            label8.Click += label8_Click;
+            //label8.Click += label8_Click;
             // 
             // TelaCadastroItem
             // 

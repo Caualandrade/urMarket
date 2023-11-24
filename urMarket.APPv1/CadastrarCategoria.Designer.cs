@@ -51,7 +51,7 @@
             label1.Size = new Size(45, 20);
             label1.TabIndex = 0;
             label1.Text = "Nome";
-            label1.Click += label1_Click;
+            //label1.Click += label1_Click;
             // 
             // textBox1
             // 
@@ -89,7 +89,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(229, 150);
             dataGridView1.TabIndex = 3;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label2
             // 
@@ -154,7 +154,7 @@
             Controls.Add(label1);
             Name = "CadastrarCategoria";
             Text = "Cadastrar Categoria";
-            Load += CadastrarCategoria_Load;
+            //Load += CadastrarCategoria_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

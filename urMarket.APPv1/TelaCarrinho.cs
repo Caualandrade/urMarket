@@ -27,17 +27,6 @@ namespace urMarket.APPv1
             ConfigurarDataGradeView();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-
         public async Task<List<Carrinho>> GetCarrinhoUsuario(string url)
         {
             HttpClient httpClient = new HttpClient();
@@ -82,6 +71,7 @@ namespace urMarket.APPv1
             dataGridView1.Columns["Quantidade"].DisplayIndex = 3;
             dataGridView1.Columns["Total"].DisplayIndex = 4;
 
+
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             for (int i = 0; i < carrinhoCliente.Count; i++)
@@ -95,7 +85,7 @@ namespace urMarket.APPv1
                 total += carrinhoCliente[i].Total;
             }
 
-            label2.Visible = false;
+
             label3.Text = "Total: R$ " + total.ToString();
 
             string url2 = $"http://localhost:5043/api/Usuario/user/{idUser}";
