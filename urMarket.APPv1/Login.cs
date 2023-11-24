@@ -77,9 +77,5 @@ namespace urMarket.APPv1
             textBox2.PasswordChar = '*';
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

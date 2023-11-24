@@ -69,7 +69,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(205, 23);
             textBox1.TabIndex = 10;
-            textBox1.TextChanged += textBox1_TextChanged;
+            //textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -105,7 +105,7 @@
             Controls.Add(label1);
             Name = "Cadastro";
             Text = "Cadastro";
-            Load += Cadastro_Load;
+            //Load += Cadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }

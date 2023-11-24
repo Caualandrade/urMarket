@@ -28,16 +28,16 @@ namespace urMarket.APPv1
             atualizarFraseDaPagina();
         }
 
-        
+
         private async void button1_Click(object sender, EventArgs e)
         {
             int qntd = int.Parse(textBox1.Text);
             TelaMarket telaMarket = new TelaMarket();
             Carrinho carrinho = await telaMarket.CadastrarCarrinho(idProduto, idUser, qntd);
-           
+
             string urlCarrinho = "http://localhost:5043/api/Carrinho";
             string json = JsonConvert.SerializeObject(carrinho);
-            using(HttpClient httpClient = new HttpClient())
+            using (HttpClient httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -63,20 +63,9 @@ namespace urMarket.APPv1
             Close();
         }
 
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public static async Task<Produto> GetProdutoById(string url)
         {
-              
+
             HttpClient httpClient = new HttpClient();
             HttpResponseMessage resposta = await httpClient.GetAsync(url);
             if (resposta.IsSuccessStatusCode)
@@ -89,7 +78,7 @@ namespace urMarket.APPv1
             {
                 return null;
             }
-           
+
         }
 
         private async void atualizarFraseDaPagina()
@@ -98,7 +87,7 @@ namespace urMarket.APPv1
             try
             {
                 Produto produto = await GetProdutoById(url);
-                if( produto != null )
+                if (produto != null)
                 {
                     label1.Text = "Informe a quantidade do item: " + produto.Nome;
                 }
@@ -107,10 +96,10 @@ namespace urMarket.APPv1
                     MessageBox.Show("Erro ao cadastrar um produto. Nenhum produto selecionado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
                 }
-                
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-           
+
         }
     }
 }

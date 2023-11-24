@@ -29,16 +29,6 @@ namespace urMarket.APPv1
             PopularDataGradeView();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             CadastrarCategoria cadastrarCategoria = new CadastrarCategoria();
@@ -122,23 +112,18 @@ namespace urMarket.APPv1
                     if (response.IsSuccessStatusCode)
                     {
 
-                        MessageBox.Show("Item adicionado com sucesso!");
+                        MessageBox.Show("Produto cadastrado com sucesso!");
                         PopularDataGradeView();
                     }
                     else
                     {
 
-                        MessageBox.Show($"Erro ao adicionar item. Código: {response.StatusCode}");
+                        MessageBox.Show($"Erro ao cadastrar produto. Código: {response.StatusCode}");
                     }
                 }
-                catch (Exception ex) { MessageBox.Show($"Erro ao adicionar item: {ex.Message}"); }
+                catch (Exception ex) { MessageBox.Show($"Erro ao cadastrar produto: {ex.Message}"); }
 
             }
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private async void popularListBox()
@@ -154,11 +139,7 @@ namespace urMarket.APPv1
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        
         public static async Task<List<Produto>> GetProdutos(string url)
         {
 

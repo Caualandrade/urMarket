@@ -25,14 +25,9 @@ namespace urMarket.APPv1
             InitializeComponent();
         }
 
-        private void Cadastro_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private async void btCadastrar_Click(object sender, EventArgs e)
         {
-            
+
             string url = "http://localhost:5043/api/Usuario";
             usuario.Tipo = "USER";
             usuario.Email = textBox1.Text;
@@ -43,7 +38,7 @@ namespace urMarket.APPv1
             {
                 string url2 = url + $"/{usuario.Email}";
                 HttpResponseMessage response2 = await client.GetAsync(url2);
-                if(response2.IsSuccessStatusCode)
+                if (response2.IsSuccessStatusCode)
                 {
                     MessageBox.Show("Usuario já cadastrado");
                 }
@@ -68,14 +63,10 @@ namespace urMarket.APPv1
                     }
                     catch (Exception ex) { MessageBox.Show($"Erro ao cadastrar usuário: {ex.Message}"); }
                 }
-                
+
 
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

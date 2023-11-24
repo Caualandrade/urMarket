@@ -28,12 +28,6 @@ namespace urMarket.APPv1
             PopularDataGradeView();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
-
         public static async Task<List<Produto>> GetProdutos(string url)
         {
             HttpClient httpClient = new HttpClient();

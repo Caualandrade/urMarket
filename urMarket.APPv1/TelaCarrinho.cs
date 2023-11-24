@@ -27,17 +27,6 @@ namespace urMarket.APPv1
             ConfigurarDataGradeView();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-
         public async Task<List<Carrinho>> GetCarrinhoUsuario(string url)
         {
             HttpClient httpClient = new HttpClient();

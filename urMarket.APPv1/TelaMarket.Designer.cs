@@ -85,7 +85,7 @@
             dataGridView1.Size = new Size(545, 240);
             dataGridView1.TabIndex = 25;
             dataGridView1.CellClick += dataGridView1_CellClick;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.DoubleClick += dataGridView1_DoubleClick;
             // 
             // label6
