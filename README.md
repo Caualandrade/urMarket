@@ -14,5 +14,22 @@ O projeto está organizado nas seguintes pastas:
 - urMarket.DAL: Camada de acesso a dados, responsável pela interação com o banco de dados.
 - urMarket.MODEL: Modelos de dados utilizados no projeto.
 
+## Funcionalidades Principais
 
+Registro de Conta: É possível criar registros de conta para acessar a aplicação.
+Adicionar Produtos: Adicionar novos produtos, definindo preço, quantidade, descrição e imagem.
+Carrinho de Compras: Adicionar produtos ao carrinho e gerenciar itens selecionados.
+
+## Ferramentas Utilizadas
+
+- Sqlite
+- API
+-
+
+
+## Autores
+ 
+Os autores do projeto são: Alexandre Del Raso Filho; Cauã Andrade; Clodoaldo Neto; Guilherme Garcia
+
+Muito obrigado por escolher o urMarket!
 
