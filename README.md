@@ -22,10 +22,10 @@ Carrinho de Compras: Adicionar produtos ao carrinho e gerenciar itens selecionad
 
 ## Ferramentas Utilizadas
 
-- Sqlite
-- API
-
-
+- SQL Server
+- C#
+- Asp.Net
+- Windows Form
 
 ## Autores
  
