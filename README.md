@@ -20,6 +20,11 @@ Registro de Conta: É possível criar registros de conta para acessar a aplicaç
 Adicionar Produtos: Adicionar novos produtos, definindo preço, quantidade, descrição e imagem.
 Carrinho de Compras: Adicionar produtos ao carrinho e gerenciar itens selecionados.
 
+
+## Banco de Dados
+![Captura de tela 2023-11-26 172107](https://github.com/Caualandrade/urMarket/assets/127252731/11154775-68e3-4bcc-9ac6-d6056e2f4877)
+
+
 ## Ferramentas Utilizadas
 
 - SQL Server
