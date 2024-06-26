@@ -34,7 +34,10 @@ Carrinho de Compras: Adicionar produtos ao carrinho e gerenciar itens selecionad
 
 ## Autores
  
-Os autores do projeto são: Alexandre Del Raso Filho; Cauã Andrade; Clodoaldo Neto; Guilherme Garcia
+Os autores do projeto são: Alexandre Del Raso Filho; Cauã Andrade; Guilherme Garcia
+
+## YouTube
+Link: https://www.youtube.com/watch?v=6FYpMyy5gDg
 
 Muito obrigado por escolher o urMarket!
 
